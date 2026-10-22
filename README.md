@@ -54,5 +54,3 @@ Push to GitHub, create a Docker web service on a Docker-capable host such as Ren
 ## Architecture
 Browser/API -> FastAPI + Pydantic -> LangGraph StateGraph: Policy Retrieval Agent -> Claim Validation Agent -> Rule-Based Risk Triage Agent -> conditional route (`needs_information` or `human_review`) -> Response Agent (optional Azure summary) -> PostgreSQL in Docker or SQLite locally. A separate MCP stdio server exposes policy-search and triage tools.
 
-## Resume bullet (only after running and understanding it)
-Built a synthetic insurance-claims triage application using Python, FastAPI, LangGraph conditional routing, specialized workflow agents, Pydantic validation, PostgreSQL/SQLite persistence, an MCP tool server, Docker, and deterministic evaluation checks.
